@@ -15,9 +15,11 @@
         <a class="read-more" href="#">read</a>
         <span class="meta-data">
           <a href="/dycalc">dycalc</a>
+          <%= time_ago_in_words(i.created_at) %> ago
         </span>
       </div>
       <div class="issue-comment-count">
+        <i class="fa fa-comments icon-muted"></i>
         <%= link_to i[:comments], "#" %>
       </div>
     </article>

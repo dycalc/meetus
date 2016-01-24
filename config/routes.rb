@@ -8,11 +8,15 @@ Rails.application.routes.draw do
   get '/about' => 'page#about'
 
   # issues
-  get 'issues/new' => 'issues#new'
-  get 'issues' => 'issues#index', :as => 'issues'
-  get 'issues/:id' => 'issues#show', :as => "issue"
-  delete 'issues/:id' => 'issues#destroy'
-  post '/issues' => 'issues#create'
+  resources :issues
+  # 下面是之前用的旧路由
+  # get 'issues/new' => 'issues#new'
+  # get 'issues' => 'issues#index', :as => 'issues'
+  # get 'issues/:id' => 'issues#show', :as => "issue"
+  # delete 'issues/:id' => 'issues#destroy'
+  # post '/issues' => 'issues#create'
+  # get 'issues/:id/edit' => 'issues#edit', :as => 'edit_issue'
+  # patch 'issues/:id' => 'issues#update'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

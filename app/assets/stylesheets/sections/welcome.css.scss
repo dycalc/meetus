@@ -1,7 +1,6 @@
 .page-welcome .navbar {
-	background: transparent;
+  background: transparent;
 }
-
 .home-banner {
   margin-top: -80px;
   padding-top: 80px;
@@ -35,13 +34,12 @@
     }
   }
 }
-
 .home-banner-links {
   position: absolute;
   right: 160px;
   top: 194px;
   .banner-btn {
-    padding: 15px 15px;
+    padding: 15px;
     font-size: 1.2em;
     font-weight: 300;
     font-family: "museo-sans-condensed";
@@ -55,7 +53,6 @@
     }
   }
 }
-
 .issue-list-header {
   border-bottom: 1px solid #ddd;
   padding-bottom: 30px;
@@ -69,7 +66,6 @@
     font-weight: normal;
   }
 }
-
 .issue-list {
   background: #fff;
   clear: both;
@@ -85,7 +81,7 @@
       margin-right: 2em;
       width: 70%;
       float: left;
-      .read-more{
+      .read-more {
         background-color: #316A72;
         color: #fff;
         font-size: 13px;
@@ -100,7 +96,6 @@
         color: #999;
         font-size: 12px;
       }
-
       h5 {
         font-size: 22px;
         line-height: 35px;
@@ -120,6 +115,12 @@
       a {
         font-size: 45px;
       }
+    }
+    .icon-muted {
+      font-size: 25px;
+      position: relative;
+      top: -20px;
+      color: #c9c9c9;
     }
     .avatar {
       width: 75px;
